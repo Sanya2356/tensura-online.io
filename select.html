@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор персонажа</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Фон -->
+        <div class="background"></div>
+
+        <!-- Изображение персонажа -->
+        <img src="img/startchar.png" alt="Персонаж" class="character-image">
+
+        <!-- Ввод никнейма -->
+        <input type="text" id="nickname" placeholder="Введите никнейм">
+
+        <!-- Кнопка играть -->
+        <button onclick="startGame()">Играть</button>
+    </div>
+
+    <script>
+        function startGame() {
+            let nickname = document.getElementById("nickname").value;
+            if (nickname.trim() === "") {
+                alert("Введите никнейм!");
+                return;
+            }
+            // Перенаправление на main.html с передачей никнейма
+            window.location.href = `main.html?nickname=${encodeURIComponent(nickname)}`;
+        }
+    </script>
+</body>
+</html>
