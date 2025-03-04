@@ -123,8 +123,8 @@ button:hover {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 116%; /* Панель на всю ширину */
-    height: 80px; /* Фиксированная высота */
+    width: 110%; /* Панель на всю ширину */
+    height: 70px; /* Фиксированная высота */
     background: #00cdec; /* Цвет панели */
     display: flex;
     justify-content: center; /* Центрируем кнопки */
@@ -137,13 +137,13 @@ button:hover {
 
 /* Кнопки меню */
 .menu-button {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     border: none;
     background: #23fbfb; /* Цвет кнопки */
     color: rgb(10, 10, 10);
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -155,7 +155,7 @@ button:hover {
 /* Блок аватара */
 .avatar-block {
     position: absolute; /* Позволяет свободно перемещать */
-    top: 11%; /* Пример: центрирование */
+    top: 14%; /* Пример: центрирование */
     left: 30%;
     transform: translate(-50%, -50%); /* Точное центрирование */
     width: 150px; /* Размер контейнера */
@@ -164,8 +164,8 @@ button:hover {
 
 /* Кнопка с рамкой */
 .framed-button {
-    width: 70%; /* Подгоняем под контейнер */
-    height: 70%;
+    width: 50%; /* Подгоняем под контейнер */
+    height: 50%;
     border: 5px solid rgb(4, 255, 255); /* Рамка */
     border-radius: 10px; /* Скругление углов */
     background: none;
